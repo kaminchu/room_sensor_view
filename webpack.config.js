@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 
+const PRODUCTION = process.env.NODE_ENV === 'production';
 module.exports = {
     entry: {
         client: __dirname + "/src/index.js",
@@ -10,11 +11,12 @@ module.exports = {
     },
     module: {
         loaders: [
-        {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader',
-        }]
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+            }
+        ]
     },
-    devtool: 'source-map'
+    devtool: 'source-map',
 };
