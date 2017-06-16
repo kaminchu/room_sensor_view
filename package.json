@@ -1,0 +1,35 @@
+{
+  "name": "room_sensor_view",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-mongoose-generator": "^3.0.3",
+    "material-ui": "^0.18.3",
+    "mongoose": "^4.10.6",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "getstorybook": "^1.7.0",
+    "react-scripts": "1.0.7",
+    "@kadira/storybook": "^2.21.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kaminchu/room_sensor_view.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/kaminchu/room_sensor_view/issues"
+  }
+}
